@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, 'DM Sans';
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.last-works {
+    width: 80%; 
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 45px 0 80px 0;
+}
+
+.last-works__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.last-works__title {
+    font-size: 2.625em;
+    font-weight: bold;
+    color: #2e246e;
+    margin: 0;
+}
+
+.last-works__showcase-button {
+    font-size: 1em;
+    letter-spacing: 0.3px;
+    padding: 10px 25px;
+    background-color: #fff;
+    color: #1E0E62;
+    border: 2px solid #EBEAED;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.last-works__showcase-button:hover {
+    background-color: #1E0E62;
+    color: #fff;
+}
+
+.last-works__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+}
+
+.last-works__item {
+    padding: 40px 40px 40px 69px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.last-works__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.last-works__item--light {
+    border: 2px solid #EBEAED;
+    background-color: #EBEAED;
+    color: #1E0E62;
+}
+
+.last-works__item--light-web {
+    border: 2px solid #EBEAED;
+    color: #15143966;
+}
+
+.last-works__item--purple {
+    background-color: #4a33da;
+    color: #ffffff;
+}
+
+.last-works__item--image {
+    background-image: url('./assets/Image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.last-works__item-web {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #1E0E62;
+}
+
+.last-works__item-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.last-works__item-description {
+    font-size: 1em;
+    margin-bottom: 69px;
+}
+
+.last-works__item-button {
+    padding: 10px 22px;
+    letter-spacing: 0.5px;
+    background-color: #fff;
+    border: 2px solid #EBEAED;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #1E0E62;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.last-works__item-button:hover {
+    background-color: #4a33da;
+    color: #ffffff;
+}
+
+.last-works__item-button--green {
+    background-color: #25DAC5;
+    color: #ffffff;
+}
+
+.last-works__item--light-web .last-works__item-title {
+    color: #1E0E62; 
+    font-weight: 600;
+}
+
