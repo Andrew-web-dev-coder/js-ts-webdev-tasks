@@ -1,4 +1,4 @@
-import "../style.css"; // Импортируем CSS файл из корневого каталога
+import "../style.css"; 
 import cardsData from "./db/cards.json";
 import { createCard } from "./components/Card";
 
