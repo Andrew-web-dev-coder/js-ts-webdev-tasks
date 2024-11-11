@@ -1,31 +1,26 @@
 [
   {
-    "heading": "Startup Framework",
-    "description": "Startup Framework works fine on devices supporting Retina Desplay. Feel the clarity!",
-    "image": {
-      "name": "card-01.jpg",
-      "alt": "An image of three balloons"
-    },
-    "tags": [
-      {
-        "slug": "ui-kit",
-        "title": "UI KIT"
-      },
-
-      {
-        "slug": "framework",
-        "title": "Framework"
-      },
-
-      {
-        "slug": "landing-page",
-        "title": "Landing Page"
-      },
-
-      {
-        "slug": "generator",
-        "title": "Generator"
-      }
-    ]
+    "title": "Startup Framework",
+    "description": "Startup Framework works fine on devices supporting Retina Display. Feel the clarity!",
+    "image": "Photo1.jpg",
+    "tags": ["UI kit,", "Framework,", "Landing page,", "generator"]
+  },
+  {
+    "title": "Slides",
+    "description": "We have created a new product that will help designers create websites for their startups.",
+    "image": "Photo2.jpg",
+    "tags": ["UI kit,", "colorful,", "Landing Page,", "Slide"]
+  },
+  {
+    "title": "Flat UI Pro",
+    "description": "Components and blocks are fixed to the common and popular 12 Grid system.",
+    "image": "Photo3.jpg",
+    "tags": ["UI kit,", "ux kit,", "design,", "flat,", "web"]
+  },
+  {
+    "title": "Slides",
+    "description": "We have created a new product that will help designers create websites for their startups.",
+    "image": "Photo4.jpg",
+    "tags": ["UI kit,", "colorful,", "Landing Page,", "Slide"]
   }
 ]
