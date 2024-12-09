@@ -1,0 +1,46 @@
+/* gallery */
+
+.memories {
+    text-align: center;
+    padding: 100px 15.5px 100px 15.5px;
+    box-shadow: 100px 100px 100px 0px rgba(0,0,0,0.9) inset;
+}
+
+.memories__title {
+    font-family: 'Jolly Lodger';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 81.2px;
+    margin-bottom: 48px;
+    color: #FE772D;
+}
+
+.memories__gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 48px;
+    max-width: 1540px;
+    max-height: 534px;
+    margin: 0 auto;
+}
+
+.memories__item {
+    background-color: #000015;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.memories__item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.memories__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

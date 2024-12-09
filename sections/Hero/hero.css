@@ -1,0 +1,158 @@
+/* hero */
+
+body {
+    margin: 0;
+    background-color: #000015;
+    color: #fff;
+}
+
+.header {
+    background-color: black;
+    padding: 48px 159px 0px;
+}
+
+.header__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 48px;
+    font-weight: 500;
+    font-family: 'Jolly Lodger';
+}
+
+.header__logo-image {
+    max-width: 150px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__list {
+    font-family: 'Rubik';
+    font-size: 1rem;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 24px
+}
+
+ul > li:last-child {
+    margin-left: 109px;
+} 
+
+.nav__list > .nav__item:hover:last-child {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2); 
+}
+  
+
+.nav__item {
+    margin-left: 0px;
+    font-family: 'Rubik';
+}
+
+.nav__link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    color: #FE772D;
+}
+
+.header__button {
+    margin-left: 20px;
+    font-family: 'Rubik';
+}
+
+.button--reservation {
+    padding: 16px 24px 16px 24px;
+    background-color: #FE772D;
+    font-weight: 700;
+    color: #292D32;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.3s;
+}
+
+.button--reservation:hover {
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 4px 0px 200px 0px;
+    position: relative; 
+    background-image: url('./assets/images/Hero.png');
+    box-shadow: 100px 5px 300px 130px rgba(0,0,0,0.9) inset;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+    
+.party {
+    margin-top: 40px;
+}
+    
+.party__date-text {
+    font-family: 'Rubik';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+    
+.calendar {
+    margin-right: 6.33px;
+    margin-top: 2px;
+}
+    
+.party__title {
+    font-family: 'Jolly Lodger';
+    font-size: 3.625rem;
+    font-weight: 500;
+    color: #FE772D;
+    margin: 10px 0px 0px 0px;
+    text-transform: uppercase;
+}
+    
+.party__image-container {
+    margin: 0 auto;
+    max-width: 1740px;
+}
+    
+.party__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+.full-width-image {
+    width: 1440px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.arrow-down {
+    position: relative; 
+    margin-top: 664px;
+    align-content: center;
+
+}
