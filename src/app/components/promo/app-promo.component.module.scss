@@ -1,0 +1,24 @@
+.banner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  padding: 10px 0;
+  &__text {
+    & a {
+      text-decoration: underline;
+      color: var(--text-white);
+    }
+  }
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-12px);
+    width: 13px;
+    height: 13px;
+  }
+}
+

@@ -1,0 +1,184 @@
+.footer {
+  overflow-x: hidden;
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__body {
+    padding: 0 100px;
+    background-color: var(--bg-gray);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
+
+    &__bottom {
+      display: flex;
+      flex-flow: column nowrap;
+      padding-bottom: 70px;
+      gap: 18px;
+
+      &__options {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        &__payments {
+          display: flex;
+          gap: 12px;
+        }
+      }
+    }
+
+    &__top {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: start;
+      margin-top: 50px;
+      gap: 100px;
+
+      &__collection {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 10px 60px;
+        align-items: center;
+        flex: 1;
+        text-align: left;
+        & a {
+          position: relative;
+          width: fit-content;
+
+          &::after {
+            content: '';
+            position: absolute;
+            opacity: 0;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--text-gray);
+          }
+        }
+
+        & a:hover {
+          &::after {
+            content: '';
+            opacity: 1;
+            transition: opacity 0.3s linear;
+          }
+        }
+      }
+
+      &__item {
+        &__recap {
+          display: flex;
+          flex-flow: column nowrap;
+          max-width: 250px;
+          gap: 35px;
+          margin-top: -8px;
+
+          &__text {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 25px;
+          }
+
+          &__icons {
+            display: flex;
+            justify-content: start;
+            gap: 12px;
+          }
+        }
+
+        & h5 {
+          letter-spacing: 3px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        & p {
+          color: var(--text-gray);
+          font-weight: 400;
+        }
+
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 26px;
+      }
+    }
+  }
+
+  &__newsletter {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 36px 64px;
+    gap: 32px;
+    border-radius: 20px;
+    max-width: 1140px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+    &::before {
+      content: '';
+      background-color: var(--bg-gray);
+      width: 50vw;
+      height: 50%;
+      right: 50%;
+      bottom: 0;
+      z-index: -1;
+      display: block;
+      position: absolute;
+    }
+
+    &::after {
+      content: '';
+      background-color: var(--bg-gray);
+      width: 50vw;
+      height: 50%;
+      left: 50%;
+      bottom: 0;
+      z-index: -1;
+      display: block;
+      position: absolute;
+    }
+
+    &__left {
+      max-width: 550px;
+      & h3 {
+        line-height: 45px;
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: stretch;
+      gap: 14px;
+      max-width: 350px;
+      width: 100%;
+
+      & input[type='mail'] {
+        padding-left: 40px;
+      }
+    }
+  }
+}
+
+.mail {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    font-family: icomoon;
+    font-size: 22px;
+    color: var(--text-gray);
+  }
+}

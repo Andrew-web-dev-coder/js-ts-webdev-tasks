@@ -1,0 +1,48 @@
+.board {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 15vw);
+  grid-template-rows: 350px;
+  overflow-x: hidden;
+  gap: 30px;
+
+  & a {
+    display: block;
+  }
+
+  &__tile {
+    background-color: var(--bg-gray);
+    max-width: 300px;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+    padding: 10px;
+    border-radius: 20px;
+    line-break: anywhere;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      min-height: 270px;
+      outline: 1px solid var(--bg-black);
+    }
+
+    &__category {
+      font-family: Rubik;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.categories {
+  display: flex;
+  flex-flow: column nowrap;
+  & h2 {
+    text-align: center;
+    margin: 65px 0px 40px 0px;
+  }
+}
+

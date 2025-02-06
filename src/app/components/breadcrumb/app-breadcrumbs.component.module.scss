@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: flex;
+  flex-flow: row;
+  padding: 0 100px;
+  font-size: 16px;
+  line-height: 19px;
+
+  &__container {
+    box-shadow: 0px -1px 0px var(--bg-light-gray);
+    padding: 24px 0;
+    width: 100%;
+    &__item {
+      display: inline;
+      &::before {
+        content: '\e902  ';
+        color: var(--text-light-gray);
+        font-family: icomoon;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.gray {
+  color: var(--text-light-gray);
+}
+

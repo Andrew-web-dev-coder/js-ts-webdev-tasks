@@ -1,0 +1,65 @@
+.filters {
+  outline: solid 1px var(--bg-gray);
+  border-radius: 20px;
+  padding: 20px 24px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 50px;
+  flex-flow: column;
+  gap: 24px;
+  height: min-content;
+  background-color: var(--bg-white);
+  z-index: 1;
+
+  &__header,
+  &__options,
+  &__slider {
+    box-shadow: 0px 1px 0px var(--bg-gray);
+    padding-bottom: 24px;
+  }
+
+  &__options {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+
+    &__types {
+      & p {
+        cursor: pointer;
+        &.selected {
+          font-weight: 700;
+        }
+        &:hover {
+          font-weight: 700;
+        }
+      }
+      display: flex;
+      flex-flow: column;
+      gap: 20px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &__close {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+  }
+
+  &__slider {
+    height: min-content;
+    padding: 0 20px;
+    padding-bottom: 50px;
+  }
+}
+
